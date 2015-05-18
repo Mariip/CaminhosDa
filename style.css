@@ -49,6 +49,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .site-title {
 	margin: 0;
+	font-variant: small-caps;
+
+
 }
 .icon {
 	font-family: "caminhos";
