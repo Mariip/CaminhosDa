@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20110222 at Tue Apr 15 10:48:22 2014
+ By Orthosie Webhosting
+</metadata>
+<defs>
+<font id="SVGFont2Regular" horiz-adv-x="1024" >
+  <font-face 
+    font-family="SVGFont2Regular"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1024"
+    panose-1="2 0 5 9 0 0 0 0 0 0"
+    ascent="819"
+    descent="-205"
+    bbox="0 0 1000 1024"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+E056-E056"
+  />
+<missing-glyph 
+d="M0 0h1000v1024h-1000v-1024z" />
+    <glyph glyph-name=".notdef" 
+d="M0 0h1000v1024h-1000v-1024z" />
+    <glyph glyph-name=".notdef" 
+d="M0 0h1000v1024h-1000v-1024z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="teatro" unicode="&#xe056;" 
+d="M440 870q-112 11 -248 -42q-28 -11 -55.5 -29.5t-47.5 -36t-36 -34t-24 -27l-8 -10.5q3 -14 9.5 -37t27 -85.5t42.5 -114t55 -102.5t66 -70t66.5 -27t67.5 -3.5t66 29t56 67.5q-2 58 3 114.5t11 85.5l6 28v0.5t1 0.5l0.5 0.5l0.5 0.5h1l0.5 0.5l0.5 0.5h1.5t1.5 0.5
+t1 0.5t2 0.5t2 1.5h1t2 0.5t2 1.5h1t1 1h2t2 1h0.5t1.5 1h2.5t2.5 1l2 1h3t3 1h0.5h1.5q1 1 3.5 1h3.5q4 74 0 131t-11 92l-7 34q-30 17 -86 22zM392 740q20 -1 40 -19.5t29 -36.5l10 -18q-2 1 -5.5 3t-14.5 6.5t-21.5 7t-25 3t-27.5 -3.5t-26 -15t-23 -28q0 4 0.5 11
+t5 24.5t10.5 31t18.5 24.5t29.5 10zM172 670q19 -3 36 -17t24 -28l7 -13q-4 2 -10.5 3.5t-24 2t-31.5 -4.5t-28.5 -22.5t-20.5 -47.5q-2 11 -4.5 28t-0.5 49t16 40q21 12 37 10zM621 578q-63 0 -105 -17q-5 -25 -9.5 -57t-7.5 -87t4 -120t26 -125q26 -85 68 -128.5t97 -43.5
+q46 0 97 29q30 18 61 66.5t55.5 109.5t41.5 113t28 97q-72 87 -155 120q-107 43 -201 43zM406 573q1 -8 1.5 -20t-0.5 -45.5t-6 -60.5t-19 -54.5t-35 -39.5q-23 -10 -46 -0.5t-44.5 32.5t-37.5 46.5t-25 41.5l-10 19q52 6 100 23q21 8 51.5 22.5t50.5 24.5zM561 414
+q4 -2 11 -4.5t28.5 -6.5t40.5 1q22 3 39.5 9.5t24.5 11.5l7 5q-11 -43 -26 -67t-28.5 -29t-28.5 1.5t-26 17.5t-21.5 27t-14.5 23t-6 11zM804 402q22 -33 49 -56l54 -43q-28 -16 -49 -19t-32 4t-17.5 21.5t-8 28.5t-0.5 31t2 23t2 10zM721 303q16 2 30 -5q12 -6 21 -17.5
+t14 -26t7.5 -31t2.5 -33.5t-1 -33t-3.5 -30.5t-4 -25t-3 -17t-1.5 -5.5q-3 6 -8 16.5t-23.5 31.5t-39.5 29q-26 7 -53.5 4.5t-49.5 -8.5l-22 -7l8 16t20 36t30 46.5t36 38.5t40 21z" />
+  </font>
+</defs></svg>

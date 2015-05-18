@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20110222 at Tue Apr 15 10:19:28 2014
+ By Orthosie Webhosting
+</metadata>
+<defs>
+<font id="SVGFont2Regular" horiz-adv-x="1024" >
+  <font-face 
+    font-family="SVGFont2Regular"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1024"
+    panose-1="2 0 5 9 0 0 0 0 0 0"
+    ascent="819"
+    descent="-205"
+    bbox="0 0 1000 1024"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+E056-E056"
+  />
+<missing-glyph 
+d="M0 0h1000v1024h-1000v-1024z" />
+    <glyph glyph-name=".notdef" 
+d="M0 0h1000v1024h-1000v-1024z" />
+    <glyph glyph-name=".notdef" 
+d="M0 0h1000v1024h-1000v-1024z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="teatro" unicode="&#xe056;" 
+d="M444 836q-108 11 -238 -41q-87 -34 -159 -124l-6 -7q4 -13 10 -35.5t25.5 -82.5t40.5 -109.5t53 -98t63 -67.5q32 -19 64.5 -26.5t65 -3t63 28t54.5 65.5q-1 37 0 70t4 60t6.5 46.5t5.5 30.5l3 11v1h1l1 1h1l1 1l1 0.5t2 0.5h1l1.5 0.5t1.5 1.5h1t2 0.5t2 1.5h1t1 1h2
+t2 1h0.5h1.5q0 1 2 1h2l2 1q1 1 3 1h3l0.5 0.5t1.5 0.5q1 1 3.5 1h3.5q4 70 0 125t-11 89l-7 33q-28 16 -82 21zM398 711q20 -1 39 -18.5t28 -35.5l9 -17q-4 2 -10.5 5t-25 8.5t-34.5 5.5t-35.5 -11t-32.5 -34q1 4 1.5 10.5t4.5 23.5t9.5 30t18 23.5t28.5 9.5zM187 643
+q18 -2 34 -15.5t23 -26.5l7 -13q-3 1 -9.5 3t-23.5 2.5t-30.5 -4.5t-27.5 -22t-19 -45q-2 11 -4.5 27t-0.5 46.5t15 38.5q20 11 36 9zM618 555q-60 0 -101 -16q-5 -24 -9 -55t-7 -83.5t4 -115t24 -120.5q25 -81 65.5 -123t93.5 -42q44 0 93 28q38 22 78 97.5t63 143.5
+t38 129q-69 85 -149 116q-103 41 -193 41zM412 550q0 -7 1 -19t0 -43.5t-6 -58t-18.5 -53t-33.5 -37.5q-23 -10 -45 0t-42.5 31t-36 44.5t-24.5 40.5l-9 17q50 6 96 23q20 8 49.5 21.5t48.5 23.5zM561 397q3 -1 9.5 -3.5t27.5 -6t40 0.5q20 3 37 9.5t24 10.5l6 5
+q-36 -139 -103 -74q-24 23 -41 58zM793 386q22 -32 48 -53l52 -42q-93 -52 -102 35q-3 29 2 60zM714 291q15 2 29 -5q21 -10 31.5 -36t11 -55t-2 -56t-6.5 -45l-4 -18q-2 6 -7 16t-23 30t-38 28q-25 7 -51.5 4.5t-47.5 -8.5l-21 -7q3 6 7.5 15.5t19 34.5t29 45t35 37
+t38.5 20z" />
+  </font>
+</defs></svg>

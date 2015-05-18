@@ -1,0 +1,129 @@
+@font-face {
+	font-family: "caminhos";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-bald7:before {
+	content: "\e000";
+}
+.flaticon-black167:before {
+	content: "\e001";
+}
+.flaticon-cinema:before {
+	content: "\e002";
+}
+.flaticon-cinema2:before {
+	content: "\e003";
+}
+.flaticon-circular28:before {
+	content: "\e004";
+}
+.flaticon-cup29:before {
+	content: "\e005";
+}
+.flaticon-earth1:before {
+	content: "\e006";
+}
+.flaticon-film18:before {
+	content: "\e007";
+}
+.flaticon-film33:before {
+	content: "\e008";
+}
+.flaticon-graduation10:before {
+	content: "\e009";
+}
+.flaticon-greek1:before {
+	content: "\e00a";
+}
+.flaticon-group12:before {
+	content: "\e00b";
+}
+.flaticon-group28:before {
+	content: "\e00c";
+}
+.flaticon-happy14:before {
+	content: "\e00d";
+}
+.flaticon-image56:before {
+	content: "\e00e";
+}
+.flaticon-image59:before {
+	content: "\e00f";
+}
+.flaticon-jar7:before {
+	content: "\e010";
+}
+.flaticon-magnifier9:before {
+	content: "\e011";
+}
+.flaticon-male12:before {
+	content: "\e012";
+}
+.flaticon-map43:before {
+	content: "\e013";
+}
+.flaticon-museum24:before {
+	content: "\e014";
+}
+.flaticon-music11:before {
+	content: "\e015";
+}
+.flaticon-music178:before {
+	content: "\e016";
+}
+.flaticon-musical60:before {
+	content: "\e017";
+}
+.flaticon-painting29:before {
+	content: "\e018";
+}
+.flaticon-portrait2:before {
+	content: "\e019";
+}
+.flaticon-round9:before {
+	content: "\e01a";
+}
+.flaticon-sad6:before {
+	content: "\e01b";
+}
+.flaticon-small39:before {
+	content: "\e01c";
+}
+.flaticon-smiley13:before {
+	content: "\e01d";
+}
+.flaticon-square58:before {
+	content: "\e01e";
+}
+.flaticon-square70:before {
+	content: "\e01f";
+}
+.flaticon-three6:before {
+	content: "\e020";
+}
+.flaticon-user91:before {
+	content: "\e021";
+}
+.flaticon-vintage8:before {
+	content: "\e022";
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+font-family: "flaticon";
+src: url("flaticon.svg") format("svg");
+
+}
+}

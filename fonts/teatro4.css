@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'SVGFont2Regular';
+    src: url('teatro4.eot');
+    src: url('teatro4.eot') format('embedded-opentype'),
+         url('teatro4.woff') format('woff'),
+         url('teatro4.ttf') format('truetype'),
+         url('teatro4.svg#SVGFont2Regular') format('svg');
+    font-weight: normal;
+	font-style: normal;
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+	font-family: "SVGFont2Regular";
+	src: url("teatro4.svg") format("svg");
+	margin-top: 6px;
+
+}
+}
