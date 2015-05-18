@@ -29,6 +29,10 @@ html, body {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+.topo h2{
+	font-variant: small-caps;
+}
+
 .agenda a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -945,7 +949,7 @@ blockquote {
 	position: relative;
 }
 
-li #legenda {
+li #legenda ,#legenda{
 	/*position: absolute;
 	bottom: 100px;
 	right: 70px;
@@ -958,9 +962,8 @@ li #legenda {
 	padding: 11px 108px 11px 32px;
 	right: 0;
 	width: auto;
-	max-width: 550px;
-	background: rgb(68, 0, 68);
-	color: white;
+	max-width: 650px;
+	
 	font-size: 11pt;
 }
 
@@ -1054,14 +1057,15 @@ li #legenda {
 	}
 
 	.single #primary {
-		width: 800px;
+		
 		padding: 1em;
+		/*
 		margin-top: 90px;
 		margin-left: 40px;
 		margin-bottom: 0px;
 		height: auto;
 		position: static;
-		z-index: 100;
+		z-index: 100;*/
 	}
 
 	/*Menus*/
@@ -1177,6 +1181,9 @@ li #legenda {
 		height: 55px;
 		float: left;
 		z-index: 100;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		padding-right: 8px;
 	}
 
 	li .quadradodatahoje, li .quadradodata {
@@ -1288,7 +1295,7 @@ li #legenda {
 	}
 
 	.hentry {
-		width: 241px;
+		width: 257px;
 		height: 241px;
 		margin: 2px;
 		position: relative;
@@ -1308,7 +1315,7 @@ li #legenda {
 		position: relative;
 		float: left;
 		overflow: hidden;
-		width: 731px;
+		width: 779px;
 		height: 241px;
 		display: block;
 		cursor: pointer;
@@ -1473,10 +1480,10 @@ li #legenda {
 	}
 
 	#site-info {
-		position: relative;
+		/*position: relative;*/
 		margin: 30px 0 0;
 		padding: 20px 40px;
-		left: 400px;
+		/*left: 400px;*/
 	}
 	.single #site-info, .page #site-info {
 	/*	margin-top: 30px;
@@ -1495,13 +1502,6 @@ li #legenda {
 		margin-left: -32px;
 		border: 0px;
 	}
-	.single .faixa {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 0;
-	}
 
 	#carrossel {
 		position: absolute;
@@ -1515,10 +1515,10 @@ li #legenda {
 	.single .clip, .page .clip {
 		position: absolute;
 		top: 0;
-		height: 530px;
-		width: 992px;
+	/*	height: 530px;
+		width: 992px;*/
 		overflow: hidden;
-		z-index: -10;
+		z-index: 0;
 	}
 
 	.categoriamob {
@@ -1633,9 +1633,9 @@ li #legenda {
 	#legenda {
 		position: absolute;
 		bottom: 120px;
-		right: 70px;
-		padding: 15px 18px 15px 18px;
-		max-width: 350px;
+		right: 0px;
+		/*padding: 15px 18px 15px 18px;
+		max-width: 350px*/;
 	}
 	.alert {
 		width: 100%;
@@ -1834,7 +1834,7 @@ li #legenda {
 		margin: 0.5em 0 0.7em;
 		float: left;
 		padding: 0 15px 0 0;
-		width: 100%;
+		width: 100%;		
 	}
 
 	.dataslider {
@@ -2826,11 +2826,11 @@ input {
 
 @media (min-width: 768px) {
 	#boxmateria {
-		width: 800px;
+		width: 850px;
 		padding: 1.8em 2em;
-		margin-top: 35px;
+		/*margin-top: 35px;
 		margin-left: 94px;
-		margin-bottom: 0px;
+		margin-bottom: 0px;*/
 		height: auto;
 		float: right;
 		position: relative;
