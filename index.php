@@ -533,10 +533,10 @@ while ( $loop2->have_posts( ) ) : $loop2->the_post( ); ?>
                 </div>
 <!---------------------------materias aqui---------------------------->
                
- <div id="materia" class="materias clearfix">
+ <div id="materia" class="materias ">
 
-                <div id="boxmateria" class="content-area clearfix">
-                    <main id="content" class="clearfix">
+                <div id="boxmateria" class="content-area ">
+                    <main id="content" class="">
                         
                         <header class="topo clearfix">
                             <h2>Matérias<span class="nomefiltro2"></span></h2>
@@ -568,18 +568,18 @@ while ( $loop2->have_posts( ) ) : $loop2->the_post( ); ?>
                         </main></div></div>
                             
 
-<!---------------------------/materias aqui---------------------------->
+<!--/materias aqui-->
 
 
 
 
-                <!----------div class="twitter">
+                <!--div class="twitter">
 <a class="twitter-timeline" href="https://twitter.com/caminhosusp" data-widget-id="481485938158088192">Tweets de @caminhosusp</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
                 </div>
-                --->
+             
                 <div class="facebook">
                     <div id="fb-root"></div>
 <div id="fb-root"></div>

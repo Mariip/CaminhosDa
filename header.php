@@ -262,14 +262,14 @@
 
             <header id="masthead" class="site-header clearfix" role="banner">
                 <a href= "<?php echo home_url(); ?>" >
-                    <h1 class="site-title"><?php include_once "/_assets/images/caminhoscult.svg.php"; ?></h1>
+                    <h1 class="site-title"><?php include "/_assets/images/caminhoscult.svg.php"; ?></h1>
                     <!--h1 class="site-title fade">Caminhos <span class="texto-secundario">da Cultura</span></h1-->
                 </a>
                 
 
                 <nav id="menu">
-                <a href= "<?php echo home_url(); ?> "> <h1 class="site-title">Caminhos <span class="texto-secundario">da Cultura</span>
-                    </h1>
+                <a href= "<?php echo home_url(); ?> "> 
+                    <h1 class="site-title"><?php include "/_assets/images/caminhoscult.svg.php"; ?></h1>                    
                 </a> 
                 <?php //get_search_form();?>
                 
