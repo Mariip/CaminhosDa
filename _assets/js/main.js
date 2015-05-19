@@ -92,8 +92,8 @@ jQuery(document).ready(function() {
 jQuery(window).on("load resize", function() {
 	if (jQuery(window).width() > 768) {
 		jQuery('#slides li').css('left', '0');
-		jQuery('#slides li').width('992px');
-		jQuery('.clip').width('992px');
+		jQuery('#slides li').width('850px');
+		jQuery('.clip').width('850px');
 		//   jQuery('.body').width(jQuery(window).width());
 		jQuery('#slides li').height(jQuery(window).height());
 		jQuery('.clip').css('left', '0');
