@@ -357,7 +357,7 @@ add_action('wp_ajax_nopriv_filtrar', 'filtrar');
 add_action('wp_ajax_filtrar', 'filtrar');
 
 add_image_size( 'celular', 768, 768, true);
-add_image_size( 'padrao', 992, 535,true);
+add_image_size( 'padrao', 850, 470,true);
 
 
 /*
