@@ -932,7 +932,7 @@ blockquote {
 #slides ul {
 	position: relative;
 	float: left;
-	left: -992px;
+	left: -850px;
 	top: 0;
 	list-style: none;
 	margin: 0;
@@ -941,7 +941,7 @@ blockquote {
 }
 
 #slides li {
-	width: 992px;
+	width: 850px;
 	height: 530px;
 	float: left;
 	-webkit-user-select: none;
@@ -979,7 +979,7 @@ li #legenda ,#legenda{
 .prev a {
 	position: absolute;
 	top: 0;
-	left: 17px;
+	left: 0px;
 	z-index: 130;
 	display: block;
 	width: 55px;
@@ -990,7 +990,7 @@ li #legenda ,#legenda{
 .next a {
 	position: absolute;
 	top: 0px;
-	left: 937px;
+	left: 795px;
 	z-index: 130;
 	display: block;
 	width: 55px;
@@ -1112,7 +1112,7 @@ li #legenda ,#legenda{
 		padding: 0 40px;
 	}
 	#slides li img {
-		min-width: 992px;
+		min-width: 850px;
 		height: auto;
 		min-height: 530px;
 		background-size: contain;
@@ -1511,15 +1511,15 @@ li #legenda ,#legenda{
 		top: 0;
 		height: 530px;
 		overflow: hidden;
-		min-width: 992;
+		max-width: 850px;
 		/*	width: 100%;*/
 		/*	left: 72px;*/
 	}
 	.single .clip, .page .clip {
 		position: absolute;
 		top: 0;
-	/*	height: 530px;
-		width: 992px;*/
+	/*	height: 530px;*/
+		width: 850px;
 		overflow: hidden;
 		z-index: 0;
 	}
@@ -1623,7 +1623,12 @@ li #legenda ,#legenda{
 		top: 25px;
 		left: -5px;
 		display: block;
-		padding: 2px 3px;
+		/*padding: 2px 3px;*/
+		border-radius: 50%;
+		width: 20px;
+		height: 20px;
+		padding-top: 3px;
+		text-align: center;
 	}
 
 	/* Ordenar depois */
