@@ -27,9 +27,9 @@
 <style type="text/css">
 <?php if ( $cor_secundaria != "" ) : ?>
 
-    body, .quadradodatahoje, .hide, .entry-header-hoje2,  #legenda, .entry-header .finalizado, .topo .finalizado,.entry-header3 .finalizado,.quadradodatahoje, #site-navigation, .datanoticiahoje, .singlem, .numero, #site-navigation li, .evento .datanoticiahoje hr, .entry-header2 {
+    body, .quadradodatahoje, #filtros li,.hide, .entry-header-hoje2,  #legenda, .entry-header .finalizado, .topo .finalizado,.entry-header3 .finalizado,.quadradodatahoje, #site-navigation, .datanoticiahoje, .singlem,  #site-navigation li, .evento .datanoticiahoje hr, .entry-header2 {
         background: <?php echo $cor_secundaria;?>;
-        <?php //echo $cor_secundaria; ?>; 
+        
     }
     .texto-secundario, .evento .datanoticiahoje, h2,#calendario li a:hover, .quadradodata, .info > h1, #content header, #proximos, #content a:hover, #content a:focus, .categoriamob {
         color: <?php echo $cor_secundaria ;?>;
@@ -37,17 +37,20 @@
     .single article,.page article, blockquote ,.fb-like {
         border-color: <?php echo $cor_secundaria; ?>;
     }
-    #filtros li, #calendario li{
+    #calendario li{
         box-shadow: 0 0 0pt 2pt <?php echo $cor_principal; ?>;
     }
-    .site-title, h1, #filtros li .selecionado,.entry-header2 .finalizado  , #filtros li a:hover, .wp-caption-text, #content a, .event-date, .wp-caption-text,  .nomefiltro, .nav-previous a {
+    #filtros li{
+        box-shadow: 0 0 0pt 2pt <?php echo $cor_secundaria; ?>;
+    }
+    .site-title, h1, #filtros li .selecionado,.entry-header2 .finalizado, #filtros li a:hover, .wp-caption-text, #content a, .event-date, .wp-caption-text,  .nomefiltro, .nav-previous a {
         color: <?php echo $cor_principal; ?>;
     }
     .autor {
         border-color: <?php echo $cor_principal; ?>;
     }
 
-    #filtros li, .page-template-search-php .topo, .search .topo, #calendario li, #searchbox, #nav-below, #search, .search, .search-results, .facebook, .evento, .faixa, #menu, #site-info, .hentry, .entry-header, .entry-header3 , hr, .entry-header-hoje {
+    .page-template-search-php .topo, .search .topo, #calendario li, #searchbox ,.numero, .topo h2, #nav-below, #search, .search, .search-results, .facebook, .evento, .faixa, #menu, #site-info, .hentry, .entry-header, .entry-header3 , hr, .entry-header-hoje {
         background: <?php echo $cor_principal; ?>;
     }
     #calendario li a:hover,#filtros li .selecionado,.entry-header2 .finalizado , .nav-previous, .nav-next, .page-template-search-php hr, #searchmenu hr, .search hr, #site-navigation li a:hover, .datanoticiahoje hr , #primary, .evento hr, .dataslider-up hr, .evento .datanoticiahoje, .quadradodata, .twitter, .site-title, .event-date, .wp-caption-text, #filtros li a:active, #filtros li a:hover, #site-navigation li:first-of-type {

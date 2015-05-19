@@ -32,8 +32,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .topo h2{
 	font-variant: small-caps;
-	display: block;
-	background: rgb(35, 60, 104);
+	display: block;	
 	color: white;
 	padding: 7px 33px 8px 43px;
 	margin-left: -32px;
