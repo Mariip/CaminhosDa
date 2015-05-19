@@ -1061,7 +1061,7 @@ li #legenda ,#legenda{
 
 	.single #primary {
 		
-		padding: 1em;
+		padding: 2em;
 		/*
 		margin-top: 90px;
 		margin-left: 40px;
@@ -1502,7 +1502,7 @@ li #legenda ,#legenda{
 		bottom: 0;
 		left: 0;
 		z-index: 60;
-		margin-left: -32px;
+		margin: 0px;
 		border: 0px;
 	}
 
@@ -2505,7 +2505,6 @@ img {
 }
 .single #content {
 	width: 100%;
-	padding: 16px;
 }
 /*FIM DO GRID--------------------------------------------------------------------------------------*/
 

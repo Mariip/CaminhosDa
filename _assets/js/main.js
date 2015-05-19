@@ -1,13 +1,13 @@
 jQuery(document).ready(function() {
 	
 	jQuery('#site-info').outerWidth(jQuery(window).width() - jQuery('#site-info').offset().left);
-	jQuery('.faixa').width(jQuery('#content').offset().left);
-	jQuery('#carrossel').width(jQuery(window).width() - jQuery('.faixa').width() + 72);
+	jQuery('.faixa').width(jQuery('#primary').offset().left);
+//	jQuery('#carrossel').width(jQuery(window).width() - jQuery('.faixa').width());
 
 	if (jQuery(window).width() > 768) {
-		jQuery('.faixa').width(jQuery('#content').offset().left);
+		jQuery('.faixa').width(jQuery('#primary').offset().left);
 		jQuery('#site-info').outerWidth(jQuery(window).width() - jQuery('#site-info').offset().left);
-		jQuery('#carrossel').width(jQuery(window).width() - jQuery('.faixa').width() + 72);
+//		jQuery('#carrossel').width(jQuery(window).width() - jQuery('.faixa').width());
 	} else {
 		jQuery('.faixa').width(80);
 		jQuery('#site-info').outerWidth("100%");	
@@ -16,9 +16,9 @@ jQuery(document).ready(function() {
 
 	jQuery(window).resize(function() {
 		if (jQuery(window).width() > 768) {
-			jQuery('.faixa').width(jQuery('#content').offset().left);
+			jQuery('.faixa').width(jQuery('#primary').offset().left);
 			jQuery('#site-info').outerWidth(jQuery(window).width() - jQuery('#site-info').offset().left);
-			jQuery('#carrossel').width(jQuery(window).width() - jQuery('.faixa').width() + 72);
+	//		jQuery('#carrossel').width(jQuery(window).width() - jQuery('.faixa').width());
 		/*	jQuery('.site-title').css('right', '30px'); 
 			jQuery('#menu').css('left', 'initial'); 		*/
 			
