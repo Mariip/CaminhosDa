@@ -261,8 +261,9 @@
         <div id="page" class="hfeed-site clearfix">
 
             <header id="masthead" class="site-header clearfix" role="banner">
-                <a href= "<?php echo home_url(); ?>" > <h1 class="site-title fade">Caminhos <span class="texto-secundario">da Cultura</span>
-                    </h1>
+                <a href= "<?php echo home_url(); ?>" >
+                    <?php get_template_part('_assets/images/caminhoscult.svg'); ?>
+                    <!--h1 class="site-title fade">Caminhos <span class="texto-secundario">da Cultura</span></h1-->
                 </a>
                 
 

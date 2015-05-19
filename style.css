@@ -1612,10 +1612,10 @@ li #legenda ,#legenda{
 
 	#calendario li a {
 		display: block;
-		width: 80px;
-		height: 80px;
+		height: 76px;
 		padding: 27px 0;
 		border-radius: 50%;
+		overflow: hidden;
 	}
 
 	.numero {
