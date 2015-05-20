@@ -98,7 +98,7 @@
     #boxmateria {
         background: <?php echo $cor_fundo;?>;
     }
-    #boxmateria h2 {
+    #boxmateria h1 {
         color: <?php echo $cor_secundaria; ?>;
     }
     #boxmateria .categoria {
@@ -113,15 +113,12 @@
     #boxmateria .hentry{
         border-color: <?php echo $cor_secundaria; ?>!important;
     }
-    .nomefiltro, .nomefiltro2, #boxmateria h1  {
+    .nomefiltro, .nomefiltro2, #boxmateria h2  {
         color: <?php echo $cor_fundo; ?>;
     }
     /*--------------------com fundo branco-----------------------------*/
     #boxmateria{
         background: <?php echo $cor_fundo;?>;
-    }
-    #boxmateria h2 {
-        color: <?php echo $cor_principal; ?>;
     }
     #boxmateria .categoria {
         color: <?php echo $cor_textos; ?>
