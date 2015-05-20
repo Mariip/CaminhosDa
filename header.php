@@ -62,7 +62,7 @@
     body, .categorianormal, .subtitulo {
         color: <?php echo $cor_textos; ?>;
     }
-    .event-info, input, .nomefiltro {
+    .event-info, input {
         border-color: <?php echo $cor_fundo; ?>;
     }
     .evento .categoria, .evento .event-title, #menu ul a, .resumo, .lupa, #menu ul, .extras-lado, .evento a, .event-info, .endereco, .dataslider-up, 
@@ -95,10 +95,10 @@
         background: <?php echo $cor_titulos; ?>;
     }
         /*--------------fundo branco 2 ------------------*/
-    #boxmateria{
+    #boxmateria {
         background: <?php echo $cor_fundo;?>;
     }
-    #boxmateria h2 , #boxmateria .nomefiltro2{
+    #boxmateria h2 {
         color: <?php echo $cor_secundaria; ?>;
     }
     #boxmateria .categoria {
@@ -113,8 +113,8 @@
     #boxmateria .hentry{
         border-color: <?php echo $cor_secundaria; ?>!important;
     }
-    #boxmateria .nomefiltro, #boxmateria h1  {
-        color: <?php echo $cor_principal; ?>;
+    .nomefiltro, .nomefiltro2, #boxmateria h1  {
+        color: <?php echo $cor_fundo; ?>;
     }
     /*--------------------com fundo branco-----------------------------*/
     #boxmateria{
@@ -137,7 +137,7 @@
         border-color: <?php echo $cor_principal; ?>!important;
     }
     #boxmateria .nomefiltro, #boxmateria h1 ,#boxmateria .nomefiltro2 {
-        color: <?php echo $cor_secundaria; ?>;
+        /*color: <?php echo $cor_secundaria; ?>;*/
     } 
        
     
