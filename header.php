@@ -43,7 +43,7 @@
     #filtros li{
         box-shadow: 0 0 0pt 2pt <?php echo $cor_secundaria; ?>;
     }
-    .site-title, h1, #filtros li .selecionado,.entry-header2 .finalizado, #filtros li a:hover, .wp-caption-text, #content a, .event-date, .wp-caption-text,  .nomefiltro, .nav-previous a {
+    .site-title, h1, #filtros li .selecionado,.entry-header2 .finalizado, #filtros li a:hover, .wp-caption-text, #content a, .event-date, .wp-caption-text,  .nav-previous a {
         color: <?php echo $cor_principal; ?>;
     }
     .autor {
@@ -62,7 +62,7 @@
     body, .categorianormal, .subtitulo {
         color: <?php echo $cor_textos; ?>;
     }
-    .event-info, input {
+    .event-info, input, .nomefiltro {
         border-color: <?php echo $cor_fundo; ?>;
     }
     .evento .categoria, .evento .event-title, #menu ul a, .resumo, .lupa, #menu ul, .extras-lado, .evento a, .event-info, .endereco, .dataslider-up, 
