@@ -30,7 +30,7 @@
         background: <?php echo $cor_secundaria;?>;
         
     }
-    .texto-secundario, .evento .datanoticiahoje, h2,#calendario li a:hover, .quadradodata, .info > h1, #content header, #proximos, #content a:hover, #content a:focus, .categoriamob {
+    .texto-secundario, .evento .datanoticiahoje, h2,#calendario li a:hover, .quadradodata, .info > h1, #content header, #proximos, #content a:hover, #content a:focus {
         color: <?php echo $cor_secundaria ;?>;
     }
     .single article,.page article, blockquote ,.fb-like {
@@ -55,7 +55,7 @@
     #calendario li a:hover,#filtros li .selecionado,.entry-header2 .finalizado , .nav-previous, .nav-next, .page-template-search-php hr, #searchmenu hr, .search hr, #site-navigation li a:hover, .datanoticiahoje hr , #primary, .evento hr, .dataslider-up hr, .evento .datanoticiahoje, .quadradodata, .twitter, .site-title, .event-date, .wp-caption-text, #filtros li a:active, #filtros li a:hover, #site-navigation li:first-of-type {
         background: <?php echo $cor_fundo; ?>;
     }
-    #filtros li, input, .lupa , #search h2, .alert, .alert-warning, .topo .finalizado,.finalizado, #searchbox h2, #primary2 h2,.sair, #searchmenu li a ,#content .sair a, #content .sair a:visited, .sair a, .resumo, #search, .fbusca, .evento a, .dataslider, .dataslider-up, .quadradodatahoje, #calendario li, #menu ul, #menu ul a, #site-info, #primary li, #primary2 li, .categoria, #filtros li, #filtros li a, .datanoticiahoje, .event-title, .extras-lado, .endereco, .endereco a,  #calendario li a, .entry-title, .next a, .prev a, .sem {
+    #filtros li, input, .lupa , #search h2, .alert, .alert-warning, .topo .finalizado,.finalizado, #searchbox h2, #primary2 h2,.sair, #searchmenu li a ,#content .sair a, #content .sair a:visited, .sair a, .resumo, #search, .fbusca, .evento a, .dataslider, .dataslider-up, .quadradodatahoje, #calendario li, #menu ul, #menu ul a, #site-info, #primary li, #primary2 li, .categoria, #filtros li, #filtros li a, .datanoticiahoje, .event-title, .extras-lado, .endereco, .endereco a,  #calendario li a, .entry-title, .next a, .prev a, .sem, .categoriamob {
         color: <?php echo $cor_fundo; ?>;
     }
     body, .categorianormal, .subtitulo {
@@ -143,7 +143,7 @@
         background: <?php echo $cor_fundo;?>;
     }
     #boxmateria h2{
-        color: <?php echo $cor_principal; ?>
+        color: <?php echo $cor_fundo; ?>
      }
     #boxmateria h1 {
         color: <?php echo $cor_textos; ?>

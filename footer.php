@@ -16,7 +16,7 @@
         </ul>
         </a>
         <div id="marca">
-            <a href="http://www.prceu.usp.br"><img src="<?php echo home_url(); ?>/wp-content/uploads/2014/10/prceucaminhos.png"></a>
+            <a href="http://www.prceu.usp.br"><img src="http://prceu.usp.br/caminhosdacultura/wp-content/uploads/2014/10/prceucaminhos.png"></a>
         </div>
     </div><!-- #site-info-->
 
