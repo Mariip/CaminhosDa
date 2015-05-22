@@ -129,8 +129,8 @@ jQuery(".faixa").click(function() {
 				right : '100%'
 			}, 600);
 			jQuery("li #legenda").animate({
-				right : '100%',
-				width : '300px'
+				right : '100%'/*,
+				width : '300px'*/
 			}, 600);
 		}
 	} else {
@@ -143,11 +143,11 @@ jQuery(".faixa").click(function() {
 			}, 600);
 			if(caixa != 1){
 			jQuery(".site-title").animate({
-				right : '20px'
+				right : '0'
 			}, 600);
 			jQuery("li #legenda").animate({
-				right : '20px',
-				width : '300px'
+				right : '40px'/*,
+				width : '300px'*/
 			}, 600);
 			}
 		}
