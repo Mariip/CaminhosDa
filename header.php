@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="http://prceu.usp.br/_common/_assets/css/normalize.min.css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/themix.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/caminhos.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/fontawesome.css" media="all" />

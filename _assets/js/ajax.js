@@ -91,10 +91,10 @@
              else
                filtrosSelecionados += 'exposicoes';
                
-	    	    
+	    	
 		jQuery.ajax({
 			type : 'POST',
-			url : '/caminhosdacultura/wp-admin/admin-ajax.php',
+			url : ajaxurl,
 			data : {
 				action : 'filtrar',
 				filtros : filtrosSelecionados
