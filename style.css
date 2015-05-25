@@ -34,11 +34,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	font-variant: small-caps;
 	display: block;	
 	color: white;
-	padding: 7px 33px 8px 43px;
+	padding: 7px 33px 8px 16px; /*43px;*/
 	margin-left: -32px;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
-
 }
 
 .agenda a {
@@ -295,6 +294,7 @@ ul {
 		font-size: 48px;
 		text-align: center;
 		line-height: 40px;
+		display: block;
 	}
 
 	.data {
@@ -919,12 +919,12 @@ blockquote {
 	float: left;
 	font-size: 12px;
 	line-height: 12px;
-	margin: 5px 10px;
+	margin: 5px 3px;
 }
 .datanoticiahoje hr {
 	position: absolute;
 	top: 50px;
-	left: 28px;
+	left: 36px;/*28px;*/
 	width: 45px;
 	height: 2px;
 }
@@ -1420,8 +1420,13 @@ li #legenda ,#legenda{
 		margin: 0 1em 1em 0;
 		width: 80px;
 		height: 80px;
-		float: left;
+		/*float: left;*/
 		text-align: center;
+		float: right;
+		margin-right: -32px;
+		border-bottom-left-radius: 50%;
+		border-top-left-radius: 50%;
+		padding-left: 16px;
 	}
 
 	.extras-lado li {
@@ -1429,9 +1434,10 @@ li #legenda ,#legenda{
 	}
 
 	.singlemes {
-		width: inherit;
-		float: left;
+		/*width: inherit;
+		float: left;*/
 		padding-top: 6px;
+		display: block;
 	}
 
 	.wp-caption {
@@ -2386,6 +2392,7 @@ li #legenda ,#legenda{
 		padding-bottom: 15px;
 		width: 100%;
 		border-bottom: solid 1px;
+		margin-left: -16px;
 	}
 
 	.single #colophon, .page #colophon {
