@@ -1428,6 +1428,9 @@ li #legenda ,#legenda{
 		border-top-left-radius: 50%;
 		padding-left: 16px;
 	}
+	.evento .datanoticiahoje {
+		margin-right: -25px;
+	}
 
 	.extras-lado li {
 		margin-right: 20px;
