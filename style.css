@@ -255,8 +255,9 @@ ul {
 		text-align: center;
 		text-decoration: none;
 		font-weight: 100;
-		position: absolute;
-
+		position: relative;
+		border-radius: 50%;
+		height: 100%;
 	}
 
 	#calendario ul, #filtros ul {
@@ -859,7 +860,7 @@ ul {
 	font-family: "SVGFont2Regular";
 	line-height: 0px;
 	display: block;
-	margin-top: -4px;
+	/*margin-top: -4px;*/
 }
 .teatro2 a {
 	font-weight: 100 !important;
@@ -1100,6 +1101,8 @@ li #legenda ,#legenda{
 		display: inline-block;
 		width: 36px;
 		height: 36px;
+		float: left;
+		padding: 0;
 		margin-left: 12px;
 		position: relative;
 	}

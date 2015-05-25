@@ -149,7 +149,7 @@ while ( $loop->have_posts( ) ) : $loop->the_post( );
                                         <div class="numero"><?php echo $nmusica->found_posts; ?>
                                         </div><?php endif;?>
                                     </li><!--
-                                    --><li><span class="filtro teatro"> <a class="filtro teatro2" data-filtro="teatro" href="#"> </a></span>
+                                    --><li><!--span class="filtro teatro"--> <a class="filtro teatro" data-filtro="teatro" href="#"> </a><!--/span-->
                                         <?php if ($nteatro->found_posts ) : ?>
                                         <div class="numero"><?php echo $nteatro->found_posts; ?> 
                                         </div><?php endif;?>
