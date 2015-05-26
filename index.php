@@ -123,33 +123,33 @@ while ( $loop->have_posts( ) ) : $loop->the_post( );
                             <h2>Agenda<span class="nomefiltro"></span></h2>
                             <nav id="filtros">
                                 <ul>
-                                    <li><a class="filtro atividades-educativas" data-filtro="atividades-educativas" href="#">  </a>
+                                    <li><a class="filtro atividades-educativas icon3" data-filtro="atividades-educativas" href="#">i <!----> </a>
                                         <?php if ($neducativas->found_posts ) : ?>
                                         <div class="numero">                                            
                                                    <?php echo $neducativas->found_posts ; ?> 
                                         </div><?php  endif;?>
                                         </li><!--
-                                    --><li><a class="filtro cinema" data-filtro="cinema" href="#">  </a>
+                                    --><li><a class="filtro cinema icon3" data-filtro="cinema" href="#">a <!----> </a>
                                         <?php if ($ncinema->found_posts ) : ?>
                                         <div class="numero"><?php echo $ncinema->found_posts ?> 
                                         </div><?php endif;?>
                                     </li><!--
-                                    --><li><a class="filtro encontros" data-filtro="encontros" href="#">  </a>
+                                    --><li><a class="filtro encontros icon3" data-filtro="encontros" href="#">c <!----> </a>
                                         <?php if ($nencontros->found_posts ) : ?>
                                         <div class="numero"><?php echo $nencontros->found_posts; ?> 
                                         </div><?php endif;?>
                                     </li><!--
-                                    --><li><a class="filtro exposicoes" data-filtro="exposicoes" href="#">  </a>
+                                    --><li><a class="filtro exposicoes icon3" data-filtro="exposicoes" href="#">d <!----> </a>
                                         <?php if ($nexposicoes->found_posts ) : ?>
                                         <div class="numero"><?php echo $nexposicoes->found_posts; ?>  
                                         </div><?php endif;?>
                                     </li><!--
-                                    --><li><a class="filtro musica" data-filtro="musica" href="#">  </a>
+                                    --><li><a class="filtro musica icon3" data-filtro="musica" href="#">f <!----> </a>
                                         <?php if ($nmusica->found_posts ) : ?>
                                         <div class="numero"><?php echo $nmusica->found_posts; ?>
                                         </div><?php endif;?>
                                     </li><!--
-                                    --><li><!--span class="filtro teatro"--> <a class="filtro teatro" data-filtro="teatro" href="#"> </a><!--/span-->
+                                    --><li><!--span class="filtro teatro"--> <a class="filtro teatro icon3" data-filtro="teatro" href="#">g<!----> </a><!--/span-->
                                         <?php if ($nteatro->found_posts ) : ?>
                                         <div class="numero"><?php echo $nteatro->found_posts; ?> 
                                         </div><?php endif;?>

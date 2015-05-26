@@ -71,6 +71,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	padding-right: 5px;
 	font-size: 14px;
 }
+.icon3 {
+	font-family: "caminhos-12"!important;
+	font-size: 14px;
+	font-weight: 100;
+}
 .semana {
 	/*font-weight:700;
 	 text-transform: capitalize;*/
