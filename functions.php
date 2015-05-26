@@ -86,99 +86,98 @@ function filtrar() {
         'posts_per_page' => 30,
         'category_name' => $filtros
     );
-        
-    
-    $loop = new WP_Query($mypost);
+    $loop = new WP_Query($mypost); ?>
 
-    while ($loop -> have_posts()) : $loop -> the_post();
+    <section id="hoje">
+        <?php while ($loop -> have_posts()) : $loop -> the_post();
     
-        // get post meta values
-        $preco = esc_html(get_post_meta(get_the_ID(), 'preco', true));
-        $data1 = esc_html(get_post_meta(get_the_ID(), 'data_inicio', true));
-        $data2 = esc_html(get_post_meta(get_the_ID(), 'data_fim', true));
-        $data_i = converteData($data1, '/', '-');
-        $data_f = converteData($data2, '/', '-');
-        $iniciot = date('Ymd', strtotime($data_i));
-        $fimt = date('Ymd', strtotime($data_i));
+            // get post meta values
+            $preco = esc_html(get_post_meta(get_the_ID(), 'preco', true));
+            $data1 = esc_html(get_post_meta(get_the_ID(), 'data_inicio', true));
+            $data2 = esc_html(get_post_meta(get_the_ID(), 'data_fim', true));
+            $data_i = converteData($data1, '/', '-');
+            $data_f = converteData($data2, '/', '-');
+            $iniciot = date('Ymd', strtotime($data_i));
+            $fimt = date('Ymd', strtotime($data_i));
 
-        // html of the loop
-        ?>
-        <div id="pai" class="clearfix">
-            <a href="<?php the_permalink(); ?> ">
-                <article id="post-<?php echo $post->ID ?>" class="hentry-first clearfix">
-                    <?php
-                    if ($data_i) {
-                        ?>
-                        <div class="quadradodatahoje clearfix">
-                            <span class="dmes"><?php echo date_i18n("M", strtotime($data_i)); ?></span>
-                            <span class="data"><?php echo date("j", strtotime($data_i)); ?></span>
-                        </div>
+            // html of the loop
+            ?>
+            <div id="pai" class="clearfix">
+                <a href="<?php the_permalink(); ?> ">
+                    <article id="post-<?php echo $post->ID ?>" class="hentry-first clearfix">
                         <?php
-                    }
-                    ?>
-                    <div class="imagem">
-                        <img src="<?php if ( has_post_thumbnail() ) echo wp_get_attachment_url(get_post_thumbnail_id()); // get_header_image()); ?>" />
-                    </div>
-                    <?php if (has_post_thumbnail()) { ?><header class="entry-header-hoje"><?php } else { ?><header class="entry-header-hoje2"><?php } ?>
-                        <div class="entry-header-up">
-                            <span class="categoria">
-                                <?php foreach ( get_the_category() as $category) {
-                                    if ( strcmp($category->cat_name, 'Destaques') ) {
-                                        echo $category->cat_name . ' ';
-                                    }
-                                } ?>
-                            </span>
-                            <h1 class="entry-title"><?php the_title(); ?></h1>
-                        </div>
-                        <div class="entry-meta-hoje">
-                            <div class="resumo">
-                                <?php echo the_excerpt_max_charlength(260); ?>
+                        if ($data_i) {
+                            ?>
+                            <div class="quadradodatahoje clearfix">
+                                <span class="dmes"><?php echo date_i18n("M", strtotime($data_i)); ?></span>
+                                <span class="data"><?php echo date("j", strtotime($data_i)); ?></span>
                             </div>
-                            <div class="dataslider-up">
-                                <?php if ( ($data_i && !$data_f) || (!$data_i && $data_f ) || $data_i === $data_f) { ?>
-                                    <span class="dmes-up"><?php echo date_i18n("M", strtotime($data_i)); ?></span>
-                                    <span class="data-up"><?php echo date("j", strtotime($data_i)); ?></span>';
-                                <?php } ?>
-                                <?php if ( ($data_i && $data_f) && $data_i != $data_f ) { ?>
-                                    <div class="wrap">
+                            <?php
+                        }
+                        ?>
+                        <div class="imagem">
+                            <img src="<?php if ( has_post_thumbnail() ) echo wp_get_attachment_url(get_post_thumbnail_id()); // get_header_image()); ?>" />
+                        </div>
+                        <?php if (has_post_thumbnail()) { ?><header class="entry-header-hoje"><?php } else { ?><header class="entry-header-hoje2"><?php } ?>
+                            <div class="entry-header-up">
+                                <span class="categoria">
+                                    <?php foreach ( get_the_category() as $category) {
+                                        if ( strcmp($category->cat_name, 'Destaques') ) {
+                                            echo $category->cat_name . ' ';
+                                        }
+                                    } ?>
+                                </span>
+                                <h1 class="entry-title"><?php the_title(); ?></h1>
+                            </div>
+                            <div class="entry-meta-hoje">
+                                <div class="resumo">
+                                    <?php echo the_excerpt_max_charlength(260); ?>
+                                </div>
+                                <div class="dataslider-up">
+                                    <?php if ( ($data_i && !$data_f) || (!$data_i && $data_f ) || $data_i === $data_f) { ?>
                                         <span class="dmes-up"><?php echo date_i18n("M", strtotime($data_i)); ?></span>
-                                        <span class="data-up"><?php echo date("j", strtotime($data_i)); ?></span>
-                                    </div>
-                                    <hr>
-                                    <div class="wrap">
-                                        <span class="dmes-up"><?php echo date_i18n("M", strtotime($data_f)); ?></span>
-                                        <span class="data-up"><?php echo date("j", strtotime($data_f)); ?></span>
-                                    </div>
-                                <?php } ?>
+                                        <span class="data-up"><?php echo date("j", strtotime($data_i)); ?></span>';
+                                    <?php } ?>
+                                    <?php if ( ($data_i && $data_f) && $data_i != $data_f ) { ?>
+                                        <div class="wrap">
+                                            <span class="dmes-up"><?php echo date_i18n("M", strtotime($data_i)); ?></span>
+                                            <span class="data-up"><?php echo date("j", strtotime($data_i)); ?></span>
+                                        </div>
+                                        <hr>
+                                        <div class="wrap">
+                                            <span class="dmes-up"><?php echo date_i18n("M", strtotime($data_f)); ?></span>
+                                            <span class="data-up"><?php echo date("j", strtotime($data_f)); ?></span>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="extras">
+                                    <ul>
+                                        <li>
+                                            <span class="icon"></span>
+                                            <?php echo esc_html(get_post_meta(get_the_ID(), 'classificacao', true)); ?>
+                                        </li>
+                                        <li>
+                                            <span class="icon"></span>
+                                            <?php if ($preco) { ?>
+                                                R$ <?php echo $preco; ?>
+                                            <?php } else { ?>
+                                                Grátis
+                                            <?php } ?>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="extras">
-                                <ul>
-                                    <li>
-                                        <span class="icon"></span>
-                                        <?php echo esc_html(get_post_meta(get_the_ID(), 'classificacao', true)); ?>
-                                    </li>
-                                    <li>
-                                        <span class="icon"></span>
-                                        <?php if ($preco) { ?>
-                                            R$ <?php echo $preco; ?>
-                                        <?php } else { ?>
-                                            Grátis
-                                        <?php } ?>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </header>
-                </article>
-            </a>
-        </div> <?php 
-        if ( have_posts() ) {
-            $number_of_posts = sizeof($wp_query->loop);
-        } else {
-            $number_of_posts = 0;
-        }
-        if ($number_of_posts < 1) { ?><hr><?php }
-    endwhile; ?>
+                        </header>
+                    </article>
+                </a>
+            </div> <?php 
+            if ( have_posts() ) {
+                $number_of_posts = sizeof($wp_query->loop);
+            } else {
+                $number_of_posts = 0;
+            }
+            if ($number_of_posts < 1) { ?><hr><?php }
+        endwhile; ?>
     </section>
     
     <?php
@@ -234,99 +233,88 @@ function filtrar() {
         if ($number_of_posts < '1') {
             $html .='<hr>';
         } 
+        $html .= '<section id="proximos" class="clearfix">';
+        $html .= '<div id="pai" class="clearfix">';
         */
-
-    endwhile; ?> 
+    ?> 
+    <?php endwhile; ?>
     </section>
-    <?php
-    //}
-    $html .= '<section id="proximos" class="clearfix">';
-    $html .= '<div id="pai" class="clearfix">';
-    wp_reset_query();
+    <section id="proximos" class="clearfix">
+        <div id="pai" class="clearfix">
+            <?php wp_reset_query(); ?>
+            <?php
+                if (!$filtros) {
+                    $mypost = array( 
+                        'post_type' => 'evento',
+                        'meta_query' =>
+                            array(
+                                'relation' => 'AND',
+                                array(
+                                    'key' => 'data_fimc' ,
+                                    'value' => array($data_fimc,(date('Ymd'))),
+                                    'type' => 'date',
+                                    'compare' => 'NOT BETWEEN'
+                                ),
+                                array('relation' => 'OR',              
+                                    array(
+                                        'key' => 'data_fimc' ,
+                                        'value' => date('Ymd'),
+                                        'type' => 'date',
+                                        'compare' => '>'
+                                    ),
+                                    array(
+                                        'key' => 'data_inicioc' ,
+                                        'value' => date('Ymd'),
+                                        'type' => 'date',
+                                        'compare' => '>'
+                                    ),  
+                                ),
+                            ),
+                        'orderby' => 'meta_value', 'order' => 'ASC', 'posts_per_page' => 30 ,'category_name' => $filtros
+                    );
+                } else {
+                    $categorias = str_replace(' ', ', ', $filtros);
+                    $mypost = array( 
+                        'post_type' => 'evento',
+                        'meta_query' =>
+                            array('relation' => 'AND',
+                                array(
+                                    'key' => 'data_fimc',
+                                    'value' => array($data_fimc,(date('Ymd'))),
+                                    'type' => 'date',
+                                    'compare' => 'NOT BETWEEN'
+                                ),
+                                array('relation' => 'OR',              
+                                    array(
+                                        'key' => 'data_fimc' ,
+                                        'value' => date('Ymd'),
+                                        'type' => 'date',
+                                        'compare' => '>'
+                                    ),
+                                    array(
+                                        'key' => 'data_inicioc' ,
+                                        'value' => date('Ymd'),
+                                        'type' => 'date',
+                                        'compare' => '>'
+                                    ),  
+                                ),
+                            ),
+                        'orderby' => 'meta_value', 'order' => 'ASC', 'posts_per_page' => 30 ,'category_name' => $filtros
+                    );
+                }
 
-    if (!$filtros)
-            $mypost = array( 
-            'post_type' => 'evento',
-            'meta_query' =>array('relation' => 'AND',
-                array(
-                    'key' => 'data_fimc' ,
-                    'value' => array($data_fimc,(date('Ymd'))),
-                    'type' => 'date',
-                    'compare' => 'NOT BETWEEN'
-                ),
-                /*array(
-                    'key' => 'data_inicioc' ,
-                    'value' => array($data_inicioc,(date('Ymd'))),
-                    'type' => 'date',
-                    'compare' => 'NOT BETWEEN'
-                ),*/
-                array('relation' => 'OR',              
-                    array(
-                        'key' => 'data_fimc' ,
-                        'value' => date('Ymd'),
-                        'type' => 'date',
-                        'compare' => '>'
-                    ),
-                    array(
-                        'key' => 'data_inicioc' ,
-                        'value' => date('Ymd'),
-                        'type' => 'date',
-                        'compare' => '>'
-                    ),  
-                ),
-                
-),
-   'orderby' => 'meta_value', 'order' => 'ASC', 'posts_per_page' => 30 ,'category_name' => $filtros ); 
-  
-   else {
-        $categorias = str_replace(' ', ', ', $filtros);
-           $mypost = array( 
-            'post_type' => 'evento',
-            'meta_query' =>array('relation' => 'AND',
-                array(
-                    'key' => 'data_fimc' ,
-                    'value' => array($data_fimc,(date('Ymd'))),
-                    'type' => 'date',
-                    'compare' => 'NOT BETWEEN'
-                ),
-                /*array(
-                    'key' => 'data_inicioc' ,
-                    'value' => array($data_inicioc,(date('Ymd'))),
-                    'type' => 'date',
-                    'compare' => 'NOT BETWEEN'
-                ),*/
-                array('relation' => 'OR',              
-                    array(
-                        'key' => 'data_fimc' ,
-                        'value' => date('Ymd'),
-                        'type' => 'date',
-                        'compare' => '>'
-                    ),
-                    array(
-                        'key' => 'data_inicioc' ,
-                        'value' => date('Ymd'),
-                        'type' => 'date',
-                        'compare' => '>'
-                    ),  
-                ),
-                
-),
-   'orderby' => 'meta_value', 'order' => 'ASC', 'posts_per_page' => 30 ,'category_name' => $filtros ); 
-   }
-    $loop = new WP_Query($mypost);
+                $loop = new WP_Query($mypost);
+                while ($loop -> have_posts()) : $loop -> the_post();
 
-    while ($loop -> have_posts()) : $loop -> the_post();
-
-        $data1 = esc_html(get_post_meta(get_the_ID(), 'data_inicio', true));
-        $data_i = converteData($data1, '/', '');
-
-        $data2 = esc_html(get_post_meta(get_the_ID(), 'data_fim', true));
-        $data_f = converteData($data2, '/', '');
-        $preco = esc_html(get_post_meta(get_the_ID(), 'preco', true));
-        $iniciot = date('Ymd', strtotime($data_i));
-        $fimt = date('Ymd', strtotime($data_i));
-		
-if ($data_i != date("Ymd") && $data_f != date("Ymd") ){
+                    $preco = esc_html(get_post_meta(get_the_ID(), 'preco', true));
+                    $data1 = esc_html(get_post_meta(get_the_ID(), 'data_inicio', true));
+                    $data2 = esc_html(get_post_meta(get_the_ID(), 'data_fim', true));
+                    $data_i = converteData($data1, '/', '');
+                    $data_f = converteData($data2, '/', '');
+                    $iniciot = date('Ymd', strtotime($data_i));
+                    $fimt = date('Ymd', strtotime($data_i));
+            		
+                    if ($data_i != date("Ymd") && $data_f != date("Ymd") ) { ?>
 
         $html .= '<article id="post-' . get_the_ID() . '"class="hentry clearfix">';
         if ($data_i) {
