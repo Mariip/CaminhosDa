@@ -9,6 +9,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/themix.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/caminhos.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/caminhos_v1.2/styles.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/fontawesome.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/flaticon.css" media="all" /> 
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/teatro4.css" media="all" />
