@@ -113,6 +113,15 @@ while ( $loop->have_posts( ) ) : $loop->the_post( );
         
     $teatro = array('category_name' => 'teatro','post_type' => 'evento','meta_query' =>array(array('key' => 'data_fimc' ,'value' => date('Ymd'),'type' => 'date','compare' => '>='),),);
     $nteatro = new WP_Query( $teatro );
+
+    $virtual = array('category_name' => 'virtual','post_type' => 'evento','meta_query' =>array(array('key' => 'data_fimc' ,'value' => date('Ymd'),'type' => 'date','compare' => '>='),),);
+    $nvirtual = new WP_Query( $virtual );
+
+    $cursos = array('category_name' => 'cursos','post_type' => 'evento','meta_query' =>array(array('key' => 'data_fimc' ,'value' => date('Ymd'),'type' => 'date','compare' => '>='),),);
+    $ncursos = new WP_Query( $cursos );
+
+    $literatura = array('category_name' => 'literatura','post_type' => 'evento','meta_query' =>array(array('key' => 'data_fimc' ,'value' => date('Ymd'),'type' => 'date','compare' => '>='),),);
+    $nliteratura = new WP_Query( $literatura );
     
 ?>
             <div id="main" class="site-main clearfix">
@@ -152,6 +161,21 @@ while ( $loop->have_posts( ) ) : $loop->the_post( );
                                     --><li><!--span class="filtro teatro"--> <a class="filtro teatro icon3" data-filtro="teatro" href="#">g<!----> </a><!--/span-->
                                         <?php if ($nteatro->found_posts ) : ?>
                                         <div class="numero"><?php echo $nteatro->found_posts; ?> 
+                                        </div><?php endif;?>
+                                    </li><!--
+                                    --><li><a class="filtro virtual icon3" data-filtro="virtual" href="#">h <!----> </a>
+                                        <?php if ($nvirtual->found_posts ) : ?>
+                                        <div class="numero"><?php echo $nvirtual->found_posts; ?>
+                                        </div><?php endif;?>
+                                    </li><!--
+                                    --><li><a class="filtro cursos icon3" data-filtro="cursos" href="#">b <!----> </a>
+                                        <?php if ($ncursos->found_posts ) : ?>
+                                        <div class="numero"><?php echo $ncursos->found_posts; ?>
+                                        </div><?php endif;?>
+                                    </li><!--
+                                    --><li><a class="filtro literatura icon3" data-filtro="literatura" href="#">e <!----> </a>
+                                        <?php if ($nliteratura->found_posts ) : ?>
+                                        <div class="numero"><?php echo $nliteratura->found_posts; ?>
                                         </div><?php endif;?>
                                     </li>
                                    

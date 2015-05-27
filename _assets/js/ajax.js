@@ -7,6 +7,9 @@
     filtros['musica'] = false;
     filtros['encontros'] = false;
     filtros['exposicoes'] = false;
+    filtros['virtual'] = false;
+    filtros['cursos'] = false;
+    filtros['literatura'] = false;
     
      	 jQuery('.atividades-educativas').mouseover(function() {
 	     	 jQuery( '.nomefiltro' ).text( 'At. Educativas' )
@@ -25,7 +28,17 @@
 	     });
 	     jQuery('.teatro').mouseover(function() {
 	     	 jQuery( '.nomefiltro' ).text( 'Teatro' );
-	     });	     
+	     });
+	     jQuery('.virtual').mouseover(function() {
+	     	 jQuery( '.nomefiltro' ).text( 'Virtual' );
+	     });
+	     jQuery('.cursos').mouseover(function() {
+	     	 jQuery( '.nomefiltro' ).text( 'Cursos' );
+	     });
+	     jQuery('.literatura').mouseover(function() {
+	     	 jQuery( '.nomefiltro' ).text( 'Literatura' );
+	     });
+
 		 jQuery('.atividades-educativas').mouseleave(function() {
 	     	 jQuery( '.nomefiltro' ).text( '' )
 	     });
@@ -44,6 +57,15 @@
 	     jQuery('.teatro').mouseleave(function() {
 	     	 jQuery( '.nomefiltro' ).text( '' );
 	     });
+	     jQuery('.virtual').mouseleave(function() {
+	     	 jQuery( '.nomefiltro' ).text( '' );
+	     });
+	     jQuery('.cursos').mouseleave(function() {
+	     	 jQuery( '.nomefiltro' ).text( '' );
+	     });
+	     jQuery('.literatura').mouseleave(function() {
+	     	 jQuery( '.nomefiltro' ).text( '' );
+	     });
 	     
 	     
 	     
@@ -52,44 +74,48 @@
 	    
 	    filtros[jQuery( this ).data( 'filtro' )] = !filtros[jQuery( this ).data( 'filtro' )];
 	    
-	     if(filtros[jQuery( this ).data( 'filtro' )]) {
-	       jQuery( this ).addClass('selecionado');
-	       }
-	       
-	     else
-	       jQuery( this ).removeClass('selecionado');
-	      	       
-	        
-	     filtrosSelecionados = '';
-	     
-	     if ( filtros['atividades-educativas'] )
-	         filtrosSelecionados += 'atividades-educativas'; 
-                   
-	     if ( filtros['cinema'] )
-	         if (filtros)
-	           filtrosSelecionados += ',cinema';	           
-	         else
-	           filtrosSelecionados += 'cinema';	           
-	     if ( filtros['encontros'] )
-             if (filtros)
-               filtrosSelecionados += ',encontros';
-             else
-               filtrosSelecionados += 'encontros';
+		if(filtros[jQuery( this ).data( 'filtro' )]) {
+			jQuery( this ).addClass('selecionado');
+		} else {
+			jQuery( this ).removeClass('selecionado');
+		}   
+
+		filtrosSelecionados = '';
+
+		if ( filtros['atividades-educativas'] )
+			filtrosSelecionados += 'atividades-educativas'; 
+		       
+		if ( filtros['cinema'] )
+			if (filtros) filtrosSelecionados += ',cinema';
+			else filtrosSelecionados += 'cinema';
+
+		if ( filtros['encontros'] )
+			if (filtros) filtrosSelecionados += ',encontros';
+		 	else filtrosSelecionados += 'encontros';
+
         if ( filtros['musica'] )
-             if (filtros)
-               filtrosSelecionados += ',musica';
-             else
-               filtrosSelecionados += 'musica';
+            if (filtros) filtrosSelecionados += ',musica';
+            else filtrosSelecionados += 'musica';
+
         if ( filtros['teatro'] )
-             if (filtros)
-               filtrosSelecionados += ',teatro';
-             else
-               filtrosSelecionados += 'teatro';
+            if (filtros) filtrosSelecionados += ',teatro';
+            else filtrosSelecionados += 'teatro';
+
         if ( filtros['exposicoes'] )
-             if (filtros)
-               filtrosSelecionados += ',exposicoes';
-             else
-               filtrosSelecionados += 'exposicoes';
+            if (filtros) filtrosSelecionados += ',exposicoes';
+            else filtrosSelecionados += 'exposicoes';
+
+		if ( filtros['virtual'] )
+            if (filtros) filtrosSelecionados += ',virtual';
+            else filtrosSelecionados += 'virtual';
+
+        if ( filtros['cursos'] )
+            if (filtros) filtrosSelecionados += ',cursos';
+            else filtrosSelecionados += 'cursos';
+
+        if ( filtros['literatura'] )
+            if (filtros) filtrosSelecionados += ',literatura';
+            else filtrosSelecionados += 'literatura';            
                
 	    	
 		jQuery.ajax({

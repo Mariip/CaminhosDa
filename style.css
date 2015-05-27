@@ -268,6 +268,9 @@ ul {
 	#calendario ul, #filtros ul {
 		list-style: none;
 	}
+	#filtros ul {
+		float: right;
+	}
 
 	.dataslider {
 		font-weight: 300;
@@ -1187,6 +1190,11 @@ li #legenda ,#legenda{
 	#filtros {
 		float: right;
 		margin-bottom: 15px;
+		width: 100%;
+		position: absolute;
+		right: 0;
+		margin-left: 32px;
+		margin-right: 32px;
 	}
 
 	/*Manchetes*/
