@@ -96,18 +96,14 @@ function filtrar() {
             <div id="pai" class="clearfix">
                 <a href="<?php the_permalink(); ?> ">
                     <article id="post-<?php echo get_the_ID(); ?>" class="hentry-first clearfix">
-                        <?php
-                        if ($data_i) {
-                            ?>
+                        <?php if ($data_i) { ?>
                             <div class="quadradodatahoje clearfix">
                                 <span class="dmes"><?php echo date_i18n("M", strtotime($data_i)); ?></span>
                                 <span class="data"><?php echo date("j", strtotime($data_i)); ?></span>
                             </div>
-                            <?php
-                        }
-                        ?>
+                        <?php } ?>
                         <div class="imagem">
-                            <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail'); ?>
+                            <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium'); ?>
                             <?php if ( $thumb ) { ?>
                                 <img src="<?php echo $thumb[0]; ?>" />
                             <?php } ?>
@@ -170,7 +166,7 @@ function filtrar() {
             } else {
                 $number_of_posts = 0;
             }
-            if ($number_of_posts < 1) { ?><hr><?php } ?>
+            if ($number_of_posts < '1') { ?><hr><?php } ?>
         <?php endwhile; ?>
     </section>
     <section id="proximos" class="clearfix">
@@ -277,7 +273,7 @@ function filtrar() {
                                             $displaytitle = "";
                                             $wholetitle = get_the_title();
                                             if ( strlen( $wholetitle ) >= 60  ) {
-                                                for ($i=0; $i < 58; $i++) { 
+                                                for ($i=0; $i < 55; $i++) { 
                                                     $displaytitle = $displaytitle . $wholetitle[$i];
                                                 }
                                                 $displaytitle = $displaytitle . '...';
@@ -382,7 +378,7 @@ function filtrar() {
                             <?php } ?>
                         </div>
                         <?php if (has_post_thumbnail()) { ?><header class="entry-header"><?php } else { ?><header class="entry-header2"><?php } ?>
-                            <a href="' . get_permalink() . '">
+                            <a href="<?php the_permalink(); ?>">
                                 <div class="entry-header-up">
                                     <span class="categoria">
                                         <?php
@@ -398,7 +394,7 @@ function filtrar() {
                                             $displaytitle = "";
                                             $wholetitle = get_the_title();
                                             if ( strlen( $wholetitle ) >= 60  ) {
-                                                for ($i=0; $i < 65; $i++) { 
+                                                for ($i=0; $i < 55; $i++) { 
                                                     $displaytitle = $displaytitle . $wholetitle[$i];
                                                 }
                                                 $displaytitle = $displaytitle . '...';
@@ -434,7 +430,8 @@ function filtrar() {
             <?php } ?>
         </div>
     </section>
-<?php }
+    <?php die();
+}
 
 add_filter('pre_get_posts', 'query_post_type');
 function query_post_type($query) {
