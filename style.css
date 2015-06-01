@@ -109,7 +109,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	border: solid 1px;
 	border-color: white;
 }
-
+.filtro:hover {
+	margin: -1px;
+	display: block;
+	height: 36px!important;
+}
 #calendario ul, #filtros ul {
 	margin: 0px;
 	list-style: none;
@@ -118,6 +122,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	border-radius: 50%;
 	border: solid 2px white;
 /*	border-color: white;*/
+}
+#calendario li a:hover, .filtro:hover{
+	border: solid 1pt;
 }
 .dataslider {
 	border: 0;
@@ -369,6 +376,7 @@ ul {
 		font-weight: 800;
 		font-size: 22px;
 		line-height: 30px;
+		font-variant: small-caps;
 	}
 
 	.extras ul {
@@ -748,6 +756,7 @@ ul {
 		text-align: center;
 		text-decoration: none;
 	}
+
 
 	.twitter h1 {
 		font-size: 24px;
@@ -1503,9 +1512,8 @@ li #legenda ,#legenda{
 	}
 
 	.evento {
-		width: 700px;
+		width: 850px;
 		float: left;
-		margin: 25px 100px 0px 90px;
 		padding: 25px;
 	}
 
@@ -1513,6 +1521,16 @@ li #legenda ,#legenda{
 		float: left;
 		border-bottom: solid 1px white;
 		margin-bottom: 20px;
+	}
+
+	.event-info .datanoticiahoje {
+		margin-right: 16px;
+		margin-left: -26px;
+		border-radius: 0;
+		border-bottom-right-radius: 40px;
+		border-top-right-radius: 40px;
+		float: left;
+		padding: 0px 20px 0 16px;
 	}
 	/* footer*/
 	.twitter {
