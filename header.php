@@ -56,7 +56,7 @@
     #calendario li a:hover,#filtros li .selecionado,.entry-header2 .finalizado , .nav-previous, .nav-next, .page-template-search-php hr, #searchmenu hr, .search hr, #site-navigation li a:hover, .datanoticiahoje hr , #primary, .evento hr, .dataslider-up hr, .evento .datanoticiahoje, .quadradodata, .twitter, .site-title, .event-date, .wp-caption-text, #filtros li a:active, #filtros li a:hover, #site-navigation li:first-of-type {
         background: <?php echo $cor_fundo; ?>;
     }
-    #filtros li, input, .lupa , #search h2, .alert, .alert-warning, .topo .finalizado,.finalizado, #searchbox h2, #primary2 h2,.sair, #searchmenu li a ,#content .sair a, #content .sair a:visited, .sair a, .resumo, #search, .fbusca, .evento a, .dataslider, .dataslider-up, .quadradodatahoje, #calendario li, #menu ul, #menu ul a, #site-info, #primary li, #primary2 li, .categoria, #filtros li, #filtros li a, .datanoticiahoje, .event-title, .extras-lado, .endereco, .endereco a,  #calendario li a, .entry-title, .next a, .prev a, .sem, .categoriamob {
+    #filtros li, input, .lupa , #search h2, .alert, .alert-warning, .topo .finalizado,.finalizado, #searchbox h2, #primary2 h2,.sair, #searchmenu li a ,#content .sair a, #content .sair a:visited, .sair a, .resumo, #search, .fbusca, .evento a, .dataslider, .dataslider-up, .quadradodatahoje, #calendario li, #menu ul, #menu ul a, #site-info, #primary li, #primary2 li, .categoria, #filtros li, #filtros li a, .datanoticiahoje, .event-title, .extras-lado, .endereco, .endereco a,  #calendario li a, .entry-title, .next a, .prev a, .sem, .categoriamob , li #legenda{
         color: <?php echo $cor_fundo; ?>;
     }
     body, .categorianormal, .subtitulo {
@@ -204,7 +204,7 @@
        .datanoticiahoje, .event-title, .extras-lado, .endereco, .endereco a, .entry-header-up, #calendario li a, .evento .categoria, .seta {
            color: <?php echo $cor_fundo; ?>;
        }
-       body, .categorianormal, .search #primary2, #site-navigation a, .entry-title, .entry-header-up h1, li #legenda {
+       body, .categorianormal, .search #primary2, #site-navigation a, .entry-title, .entry-header-up h1 {
            color: <?php echo $cor_textos; ?>;
        }
        .evento .categoria, .evento .event-title, #menu ul a,.resumo,#menu ul,#site-info h1, .extras-lado, .evento a, .event-info, .endereco, .dataslider-up, .evento hr, #site-info,#site-info a, #site-info h1, #calendario li a, 

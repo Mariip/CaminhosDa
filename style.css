@@ -1122,7 +1122,8 @@ li #legenda ,#legenda{
 	}
 
 	#calendario {
-		float: right;
+		position: absolute;
+		right: 10px;
 		margin-top: 187px;
 		margin-right: 20px;
 		width: 90px;
@@ -1670,18 +1671,6 @@ li #legenda ,#legenda{
 		overflow: hidden;
 	}
 
-	.numero {
-		position: absolute;
-		top: 25px;
-		left: -5px;
-		display: block;
-		/*padding: 2px 3px;*/
-		border-radius: 50%;
-		width: 20px;
-		height: 20px;
-		padding-top: 3px;
-		text-align: center;
-	}
 
 	/* Ordenar depois */
 	#colophon {
@@ -1706,6 +1695,18 @@ li #legenda ,#legenda{
 		display: none;
 	}
 
+}
+.numero {
+	position: absolute;
+	top: 25px;
+	left: -5px;
+	display: block;
+	/*padding: 2px 3px;*/
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	padding-top: 3px;
+	text-align: center;
 }
 /* ===============================================================*/
 
@@ -2293,14 +2294,6 @@ li #legenda ,#legenda{
 		width: 60px;
 		height: 60px;
 		padding: 13px 10px 0 0;
-	}
-
-	.numero {
-		position: absolute;
-		top: 25px;
-		left: -5px;
-		display: block;
-		padding: 2px 2px;
 	}
 
 	/* Ordenar depois */
