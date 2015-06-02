@@ -496,7 +496,6 @@ ul {
 	}
 	.finalizado {
 		display: block;
-		width: 242px;
 		right: 0px;
 		top: -25px;
 		padding: 0px 10px;
@@ -946,14 +945,17 @@ blockquote {
 	width: 45px;
 	height: 2px;
 }
-
 .wrap:last-of-type {
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right:0;
+}
+.event-info .wrap:last-of-type {
+	width: 31px;
+	right: 16px;
 }
 .datanoticiahoje {
-	position: relative;
+	position: relative;	
 }
 
 /* FIM TIPOGRAFIA--------------------------------------------------------------------------------*/
@@ -1101,7 +1103,7 @@ li #legenda ,#legenda{
 	}
 
 	.single #primary {
-		
+		overflow:visible;
 		padding: 2em;
 		/*
 		margin-top: 90px;
@@ -1232,7 +1234,7 @@ li #legenda ,#legenda{
 		width: 55px;
 		height: 55px;
 		float: left;
-		z-index: 100;
+		z-index: -1;
 		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
 		padding-right: 8px;
@@ -1318,13 +1320,16 @@ li #legenda ,#legenda{
 	.topo .finalizado {
 		width: 796px;
 		left: 66px;
-		top: 424px;
+		top: -53px;
 		padding: 2px 5px;
 		line-height: 21px;
 		z-index: 210;
 		text-transform: uppercase;
 		font-size: 14px;
 		position: absolute;
+		padding: 5px 16px;
+		border-top-left-radius: 16px;
+		border-bottom-left-radius: 16px;
 		float: left;
 	}
 	/*.topo .datanoticiahoje .finalizado {
@@ -1525,12 +1530,13 @@ li #legenda ,#legenda{
 
 	.event-info .datanoticiahoje {
 		margin-right: 16px;
-		margin-left: -26px;
+		margin-left: -30px;
 		border-radius: 0;
 		border-bottom-right-radius: 40px;
 		border-top-right-radius: 40px;
 		float: left;
 		padding: 0px 20px 0 16px;
+		width: 100px;
 	}
 	/* footer*/
 	.twitter {
@@ -1768,7 +1774,7 @@ li #legenda ,#legenda{
 		float: left;
 		padding: 0;
 		padding-right: 40px;
-		position: static;
+		position: static;		
 	}
 	.page #primary {
 		padding-right: 40px;
