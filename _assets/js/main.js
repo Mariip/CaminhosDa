@@ -48,7 +48,7 @@ jQuery(document).ready(function() {
 		if (jQuery(window).width() > 768) {
 
 			jQuery(this).children(".entry-header").stop(true, true).delay(500).animate({
-				top : '140px',
+				top : '156px',
 				height : '102px'
 
 			});
@@ -73,8 +73,8 @@ jQuery(document).ready(function() {
 	jQuery(".hentry-first").mouseleave(function() {
 		if (jQuery(window).width() > 768) {
 			jQuery(this).children(".entry-header-hoje").stop(true, true).delay(500).animate({
-				top : '165px',
-				height : '77px'
+				top : '171px',
+				height : '86px'
 			});
 		}
 	});

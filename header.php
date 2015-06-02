@@ -277,7 +277,7 @@
                 <?php //get_search_form();?>
                 
                     <ul>
-                        <a href="./locais/"><li> Espaços culturais </li></a><span class="min-hide">|</span><a href="./quem-somos/"><li> Quem Somos </li></a><span class="min-hide">|</span><a href="./fale-conosco/"><li> Fale Conosco </li></a>
+                        <a href="<?php echo home_url(); ?>/locais/"><li> Espaços culturais </li></a><span class="min-hide">|</span><a href="<?php echo home_url(); ?>/quem-somos/"><li> Quem Somos </li></a><span class="min-hide">|</span><a href="<?php echo home_url(); ?>/fale-conosco/"><li> Fale Conosco </li></a>
                     </ul>
                     <div id="calendario">
                         <ul>
