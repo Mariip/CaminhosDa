@@ -124,7 +124,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                          
                         
                         <tr>
-                            <td><span class="icon"></span>
+                            <td><span class="icon2"></span>
                             </td>
                             <?php if (!($datadeinicio && !strcmp( $datadeinicio, $datadetermino)) )   : ?>
                             <td>

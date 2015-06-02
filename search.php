@@ -130,8 +130,8 @@ if (  have_posts( ) ) : ?>
                                                 
                                             <div class="extras">
                                                 <ul>
-                                                    <li><span class="icon"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
-                                                    <li><span class="icon"> </span><?php 
+                                                    <li><span class="icon2"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
+                                                    <li><span class="icon2"> </span><?php 
                                                     if ($preco) 
                                                         echo 'R$' . $preco; 
                                                     else 

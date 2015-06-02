@@ -165,7 +165,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                         <?php
                             foreach ($local['horarios'] as $times) {
                                 if ( !empty($times) & isset($times['dias']) ) {
-                                    echo '<tr><td><span class="icon"></span></td><td>';
+                                    echo '<tr><td><span class="icon2"></span></td><td>';
                                     echo '<span class="semana">';
 
                                     $temp_day = array();
@@ -351,7 +351,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                         <tr>
                             <?php if ($_site) : ?>
                             <td>
-                                <span class="icon"></span>
+                                <span class="icon2"></span>
                             </td>
                             <td>
                             <div class="url">

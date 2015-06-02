@@ -126,11 +126,8 @@ function filtrar() {
                                 <div class="extras">
                                     <ul>
                                         <li>
-                                            <span class="icon"></span>
-                                            <?php echo esc_html(get_post_meta(get_the_ID(), 'classificacao', true)); ?>
-                                        </li>
-                                        <li>
-                                            <span class="icon"></span>
+                                            <span class="icon2"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
+                                                    <li><span class="icon2"> </span>
                                             <?php if ($preco) { ?>
                                                 R$ <?php echo $preco; ?>
                                             <?php } else { ?>
@@ -316,11 +313,8 @@ function filtrar() {
                                     <div class="extras">
                                         <ul>
                                             <li>
-                                                <span class="icon"></span>
-                                                <?php echo esc_html(get_post_meta(get_the_ID(), 'classificacao', true)); ?>
-                                            </li>
-                                            <li>
-                                                <span class="icon"></span>
+                                                <span class="icon2"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
+                                                    <li><span class="icon2"> </span>
                                                 <?php if ($preco) { ?>
                                                     R$ <?php echo $preco; ?>
                                                 <?php } else { ?>
@@ -409,11 +403,8 @@ function filtrar() {
                                     <div class="extras">
                                         <ul>
                                             <li>
-                                                <span class="icon"></span>
-                                                <?php echo esc_html(get_post_meta(get_the_ID(), 'classificacao', true)); ?>
-                                            </li>
-                                            <li>
-                                                <span class="icon"></span>
+                                                <span class="icon2"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
+                                                    <li><span class="icon2"> </span>
                                                 <?php if ($preco) { ?>
                                                     R$ <?php echo $preco; ?>
                                                 <?php } else { ?>

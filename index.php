@@ -265,8 +265,8 @@ wp_reset_query( );
                                             </div>
                                             <div class="extras">
                                                 <ul>
-                                                    <li><span class="icon"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
-                                                    <li><span class="icon">  </span><?php 
+                                                    <li><span class="icon2"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
+                                                    <li><span class="icon2">  </span><?php 
                                                     if ( get_post_meta( get_the_ID( ), 'preco', true ) ) 
                                                         echo 'R$' . esc_html( get_post_meta( get_the_ID( ), 'preco', true )) ; 
                                                     else 
@@ -453,8 +453,8 @@ while ( $loop->have_posts( ) ) : $loop->the_post( );
                                                 <?php endif; ?></div>
                                             <div class="extras">
                                                 <ul>
-                                                    <li><span class="icon"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
-                                                    <li><span class="icon"> </span><?php 
+                                                    <li><span class="icon2"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
+                                                    <li><span class="icon2"> </span><?php 
                                                     if ( get_post_meta( get_the_ID( ), 'preco', true ) ) 
                                                         echo 'R$' . esc_html( get_post_meta( get_the_ID( ), 'preco', true )) ; 
                                                     else 
