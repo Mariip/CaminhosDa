@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php
-    $_site = get_post_meta( get_the_ID(), 'site_evento', true);
+    //$_site = get_post_meta( get_the_ID(), 'site_evento', true);
     $data1 = esc_html(get_post_meta(get_the_ID(), 'data_inicio', true));
     $data_i = converteData($data1, '/', '-');
 
@@ -158,6 +158,8 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                                 } else {
                                     echo 'Evento permanente';
                                 }
+
+                                $_site = $local['website'];
                                 
                             ?>
                             </td>
@@ -295,9 +297,9 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                         }
                     ?>&details=Para+mais+detalhes,+acesse%3a+<?php 
                         if ($_site)
-                            echo $_site; 
+                            echo $_site;
                         else
-                            the_permalink()  
+                            the_permalink()
                         ?>&location=<?php
                         echo $local['local'];
                         ?>,+<?php echo $local['endereco']; ?>&sf=true&output=xml#f">
@@ -355,7 +357,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                             </td>
                             <td>
                             <div class="url">
-                                <a href="<?php echo $_site; ?>" ><?php echo $_site; ?></a>
+                                <a href="<?php if ( strpos($_site, "//") === false ) echo "//" . $_site; else echo $_site; ?>" ><?php echo $_site; ?></a>
                             </div></td>
                             <?php endif;?>
                             </tr>
