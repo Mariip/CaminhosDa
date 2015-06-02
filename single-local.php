@@ -351,10 +351,10 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                         </tr>
                       
                         <?php endif; ?>
-                        <!--horario3--------------------------------------------->
+                        <!--horario3-->
                         <div class="adr">
                         <tr>
-                            <td><span class="icon"></span></td>
+                            <td><span class="icon2"></span></td>
                             <td>
                                 <?php echo $local['endereco']; ?>
                             </td></tr><tr>
@@ -382,7 +382,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                         <tr>
                             <?php if ($local['site']) :?>
                             <td>
-                                <span class="icon"></span
+                                <span class="icon2"></span>
                             </td>
                             <td>
                             <div class="url">
@@ -392,7 +392,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                             </tr>
                             <?php if( $local['observacoes']) : ?>
                             <tr>
-                                <td><span class="icon2"></span></td>                                
+                                <td><span class="icon2"></span></td>                                
                             <td>
                             <?php echo $local['observacoes']; ?>
                             </td>
