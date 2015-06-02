@@ -55,9 +55,6 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                 <main id="content" class="clearfix">
                     <article>
                         <header class="topo clearfix">
-                           <?php if ($data_i || $data_f) : ?>
-                               <?php if ( date("Ymd", strtotime($data_f)) < date("Ymd"))
-                                    echo '<span class="finalizado">Evento Encerrado</span>'?>
                             <div class="datanoticiahoje">    
                                                             
                                 <?php if ( ($data_i && !$data_f) || (!$data_i && $data_f) || $data_i === $data_f ) : ?>                                    
@@ -70,7 +67,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                                     <div class="wrap"><span class="singlemes"><?php echo date_i18n("M", strtotime($data_f)); ?></span>
                                     <span class="singledata"><?php echo date("j", strtotime($data_f)); ?></span></div>
                                 <?php endif; ?>                                
-                            </div> <?php endif; ?>
+                            </div> <?php //endif; ?>
                             
                             <div class="info">
                                 <span class="categorianormal">
@@ -114,14 +111,14 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
 
                     <div class="extras-lado">
                         <ul>
-                            <li><span class="icon"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
-                            <li><span class="icon">  </span><?php 
+                            <li><span class="icon2"></span> <?php echo esc_html ( get_post_meta( get_the_ID( ), 'classificacao', true )) ?> </li>
+                            <li><span class="icon2">  </span><?php 
                                                     if ( get_post_meta( get_the_ID( ), 'preco', true ) ) 
                                                         echo 'R$' . esc_html( get_post_meta( get_the_ID( ), 'preco', true )) ; 
                                                     else 
                                                         echo 'Grátis';
                                                     ?></li>
-                            <li><span class="icon">  </span> <a href="<?php echo esc_html( get_post_meta( get_the_ID( ), 'site_evento', true )) ?>">Saiba Mais</a> </li>
+                            <li><span class="icon2"> </span> <a href="<?php echo esc_html( get_post_meta( get_the_ID( ), 'site_evento', true )) ?>">Saiba Mais</a> </li>
                         </ul>
                     </div><?php endwhile; ?>
 
@@ -133,7 +130,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                     <table class="endereco">
                         <tr>
 
-                            <td><span class="icon"></span>
+                            <td><span class="icon2"></span>
                                 
                             </td>
                             
@@ -312,7 +309,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                         
                         <?php if( $local['local']) : ?>
                         <tr>
-                            <td><span class="icon"></span></td>
+                            <td><span class="icon2"></span></td>
                             <td><span class="fn"><strong><?php echo $local['local']; ?></strong></span><br>
                             </td>
                         </tr><?php endif; ?>
@@ -354,7 +351,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                         <tr>
                             <?php if ($_site) : ?>
                             <td>
-                                <span class="icon"></span
+                                <span class="icon"></span>
                             </td>
                             <td>
                             <div class="url">
@@ -364,7 +361,7 @@ if (get_post(get_post_thumbnail_id()) -> post_excerpt) {
                             </tr>
                             <?php if( $local['observacoes']) : ?>
                             <tr>
-                                <td><span class="icon2"></span></td>                                
+                                <td><span class="icon2"></span></td>                                
                             <td>
                             <?php echo $local['observacoes']; ?>
                             </td>
